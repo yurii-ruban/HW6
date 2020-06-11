@@ -5,6 +5,6 @@ project(TestApp)
 set(SOURCES main.cpp)
 add_subdirectory(lib)
 
-add_executable(testapp)
+add_executable(testapp ${SOURCES})
 target_link_libraries(testapp fwrapper)
 target_include_directories(testapp PUBLIC include)
